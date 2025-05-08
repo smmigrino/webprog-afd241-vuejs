@@ -1,5 +1,3 @@
-App.vue
- 
 <template>
   <h1>Hello WEBPROG AFD241 World!</h1>
   <h2>Food</h2>
