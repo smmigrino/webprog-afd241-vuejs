@@ -3,6 +3,8 @@
   <h2>Food</h2>
   <food-item/>
   <food-item2/>
+  <comment-form/>
+  <comment/>
     <ul>
     <li v-for="instrument in instruments" :key="instrument.id">{{ instrument.name }}</li>
   </ul>
