@@ -22,6 +22,8 @@
   import { ref } from 'vue';
   import { supabase } from '../lib/supabaseClient'
 
+  const emit = defineEmits(['comment-submitted']) //added
+
   
   const name = ref('');
   const comment = ref('');
@@ -44,6 +46,7 @@
         submissionStatus.value = "Comment submitted successfully!";
         name.value = ''; // Clear form fields
         comment.value = '';
+        emit('comment-submitted')//added
       }
     } catch (err) {
       console.error("An unexpected error occurred:", err);
