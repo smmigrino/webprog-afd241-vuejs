@@ -4,18 +4,7 @@
       <li v-for="comment in comments" :key="comment.id">{{ comment.name }} {{ comment.comment }}</li>
     </ul>
   </template>
-  
-  <script></script>
-  
-  <style>
-    #app > div {
-      border: dashed black 1px;
-      display: inline-block;
-      margin: 10px;
-      padding: 10px;
-      background-color: red;
-    }
-  </style>
+
 
 <script setup>
 import { ref, onMounted } from 'vue'
@@ -34,13 +23,11 @@ onMounted(() => {
 
 </script>
 
-
-<style>
-  #app > div {
-    border: dashed black 1px;
-    display: inline-block;
-    margin: 10px;
-    padding: 10px;
-    background-color: red;
-  }
-</style>
+  <style>
+    #app > div {
+      border: dashed black 1px;
+      display: inline-block;
+      margin: 10px;
+      padding: 10px;
+    }
+  </style>

@@ -46,6 +46,3 @@ onMounted(() => {
    getComments()
 })
 </script>
- 
-<style>
-</style>
