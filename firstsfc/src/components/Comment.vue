@@ -13,7 +13,7 @@
       display: inline-block;
       margin: 10px;
       padding: 10px;
-      background-color: lightyellow;
+      background-color: red;
     }
   </style>
 
@@ -25,7 +25,7 @@ const comments = ref([])
 
 async function getComments() {
   const { data } = await supabase.from('comments').select()
-  comment.value = data
+  comments.value = data
 }
 
 onMounted(() => {

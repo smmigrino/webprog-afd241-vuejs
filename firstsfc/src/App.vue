@@ -38,7 +38,7 @@ async function getInstruments() {
 
 async function getComments() {
   const { data } = await supabase.from('comments').select()
-  comment.value = data
+  comments.value = data
 }
  
 onMounted(() => {
