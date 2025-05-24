@@ -25,7 +25,7 @@ const comments = ref([])
 
 async function getComments() {
   const { data } = await supabase.from('comments').select()
-  comments.value = data
+  comment.value = data
 }
 
 onMounted(() => {
