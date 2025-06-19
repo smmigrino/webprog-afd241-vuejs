@@ -27,7 +27,7 @@ import { supabase } from './lib/supabaseClient'
 import FoodItem from './components/FoodItem.vue'
 import FoodItem2 from './components/FoodItem2.vue'
 import CommentForm from './components/CommentForm.vue'
-import Comment from './components/Comment.vue'
+import Comments from './components/Comment.vue'
  
 const instruments = ref([])
 const comments = ref([])
