@@ -7,8 +7,6 @@
   <h2>Leave a Comment</h2>
   <comment-form @comment-submitted="getComments" />
 
-  <h2>Comments</h2>
-
   <comment/>
 
   <h2>Instruments</h2>
@@ -24,20 +22,14 @@ import { supabase } from './lib/supabaseClient'
 
  
 const instruments = ref([])
-const comments = ref([])
  
 async function getInstruments() {
   const { data } = await supabase.from('instruments').select()
   instruments.value = data
 }
 
-async function getComments() {
-  const { data } = await supabase.from('comments').select()
-  comments.value = data
-}
  
 onMounted(() => {
    getInstruments()
-   getComments()
 })
 </script>
