@@ -8,11 +8,8 @@
   <comment-form @comment-submitted="getComments" />
 
   <h2>Comments</h2>
-  <ul>
-    <li v-for="comment in comments" :key="comment.id">
-      {{comment.name}}: {{comment.comment}}
-    </li>
-  </ul>
+
+  <comment/>
 
   <h2>Instruments</h2>
     <ul>
@@ -24,9 +21,6 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { supabase } from './lib/supabaseClient'
-import FoodItem from './components/FoodItem.vue'
-import FoodItem2 from './components/FoodItem2.vue'
-import CommentForm from './components/CommentForm.vue'
 
  
 const instruments = ref([])
