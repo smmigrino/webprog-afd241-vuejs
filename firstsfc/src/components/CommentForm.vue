@@ -7,7 +7,7 @@
           <input type="text" id="name" v-model="name" required class="form-control">
         </div>
         <div class="form-group">
-          <label for="comment">Comment:</label>
+          <label for="comment">COMMENT:</label>
           <textarea id="comment" v-model="comment" required class="form-control"></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
